@@ -8,7 +8,7 @@ const e= "https://www.pca.ac.in/images/4.jpg";
 const g= "https://www.pca.ac.in/images/2.jpg";
 const a= "https://www.pca.ac.in/images/3.jpg";
 
-const app=()=>{
+const App=()=>{
   return (
     <HeroSlider
         slidingAnimation="left_to_right"
