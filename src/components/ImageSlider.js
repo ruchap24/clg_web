@@ -1,6 +1,5 @@
 import React from 'react';
-import HeroSlider, {Slide} from 'hero-slider'; 
-import { Fullscreen } from 'react-icons/bi';
+import HeroSlider, {Slide, Nav} from 'hero-slider'; 
 const b= "https://www.pca.ac.in/images/1.jpg";
 const camp= "https://www.pca.ac.in/images/6.JPG";
 const c= "https://www.pca.ac.in/images/5.JPG";
@@ -9,7 +8,7 @@ const e= "https://www.pca.ac.in/images/4.jpg";
 const g= "https://www.pca.ac.in/images/2.jpg";
 const a= "https://www.pca.ac.in/images/3.jpg";
 
-const App=()=>{
+const ImageSlider=()=>{
   return (
     <HeroSlider
         slidingAnimation="left_to_right"
@@ -20,7 +19,7 @@ const App=()=>{
         onAfterChange={nextSlide => console.log("onAfterChange",nextSlide)}
         style={{
             backgroundColor: "rgba(0, 0, 0, 0.33)",
-            backgroundPosition: "Fullscreen"
+            backgroundSize: "cover"
         }}
         settings={{
             slidingDuration: 250,
@@ -33,7 +32,7 @@ const App=()=>{
         >
         <Slide
             background={{
-            backgroundImage: c,
+            backgroundImage: `url("https://www.pca.ac.in/images/1.jpg")`,
             backgroundAttachment: "fixed"
             }}
             />
@@ -51,19 +50,19 @@ const App=()=>{
           />
         <Slide
             background={{
-            backgroundImage: d,
+            backgroundImageSrc: d,
             backgroundAttachment: "fixed"
             }}
             />
         <Slide
             background={{
-            backgroundImage: e,
+            backgroundImageSrc: e,
             backgroundAttachment: "fixed"
             }}
             />
         <Slide
             background={{
-            backgroundImage: g,
+            backgroundImageSrc: g,
             backgroundAttachment: "fixed"
             }}
           />
@@ -73,8 +72,9 @@ const App=()=>{
             backgroundAttachment: "fixed"
             }}
           />
+          <Nav />
     </HeroSlider>
-  )
+  );
 }
 
-export default App;
+export default ImageSlider;
