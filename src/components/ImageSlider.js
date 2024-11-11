@@ -26,48 +26,48 @@ const App=()=>{
             shouldAutoplay: true,
             shouldDisplayButtons: true,
             autoplayDuration: 5000,
-            heigth: "1000vh"
+            heigth: "100vh"
         }}
         >
         <Slide
             background={{
-            backgroundImage: `url(${b})`,
+            backgroundImage: c,
             backgroundAttachment: "fixed"
             }}
             />
         <Slide
             background={{
-            backgroundImage: `url(${camp})`,
+            backgroundImage: camp,
             backgroundAttachment: "fixed"
             }}
             />
         <Slide
             background={{
-            backgroundImage: `url(${c})`,
+            backgroundImage: b,
             backgroundAttachment: "fixed"
             }}
           />
         <Slide
             background={{
-            backgroundImage: `url(${d})`,
+            backgroundImage: d,
             backgroundAttachment: "fixed"
             }}
             />
         <Slide
             background={{
-            backgroundImage: `url(${e})`,
+            backgroundImage: e,
             backgroundAttachment: "fixed"
             }}
             />
         <Slide
             background={{
-            backgroundImage: `url(${g})`,
+            backgroundImage: g,
             backgroundAttachment: "fixed"
             }}
           />
         <Slide
             background={{
-            backgroundImage: `url(${a})`,
+            backgroundImage: a,
             backgroundAttachment: "fixed"
             }}
           />
