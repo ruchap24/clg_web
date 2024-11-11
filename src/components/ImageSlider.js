@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroSlider, {Slide} from 'hero-slider'; 
+import { Fullscreen } from 'react-icons/bi';
 const b= "https://www.pca.ac.in/images/1.jpg";
 const camp= "https://www.pca.ac.in/images/6.JPG";
 const c= "https://www.pca.ac.in/images/5.JPG";
@@ -18,7 +19,8 @@ const App=()=>{
         onChange={nextSlide=> console.log("onChange",nextSlide)}
         onAfterChange={nextSlide => console.log("onAfterChange",nextSlide)}
         style={{
-            backgroundColor: "rgba(0, 0, 0, 0.33)"
+            backgroundColor: "rgba(0, 0, 0, 0.33)",
+            backgroundPosition: "Fullscreen"
         }}
         settings={{
             slidingDuration: 250,
