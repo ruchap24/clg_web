@@ -32,7 +32,7 @@ const ImageSlider=()=>{
         >
         <Slide
             background={{
-            backgroundImage: `url("https://www.pca.ac.in/images/1.jpg")`,
+            backgroundImage: c,
             backgroundAttachment: "fixed"
             }}
             />
